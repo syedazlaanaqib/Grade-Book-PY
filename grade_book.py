@@ -6,7 +6,7 @@ students = {}  # name -> list of marks
 
 def show_menu():
     print("\n=== Grade Book ===")
-<<<<<<< HEAD
+
     print("1. Show grades")
     print("0. Exit")
 
@@ -36,7 +36,6 @@ def show_grades():
         )
 
 
-=======
     print("1. Add Student")
     print("0. Exit")
 
@@ -46,7 +45,7 @@ def add_student():
     students[name] = [int(m) for m in marks.split()] 
     print(f"Added {name}.")
     
->>>>>>> 68fb9bf72d8533e48adc85c177d28efcd939a9d7
+
 def main():
     while True:
         show_menu()
