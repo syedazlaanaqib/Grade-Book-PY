@@ -11,7 +11,7 @@ def show_menu():
 
 def add_student(): 
     name = input("Student name: ") 
-    marks = input("Marks separated by spaces: ") 
+    marks = int(input("Marks separated by spaces: ") )
     students[name] = [int(m) for m in marks.split()] 
     print(f"Added {name}.")
     
