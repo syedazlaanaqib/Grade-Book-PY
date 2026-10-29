@@ -6,6 +6,7 @@ students = {}  # name -> list of marks
 
 def show_menu():
     print("\n=== Grade Book ===")
+<<<<<<< HEAD
     print("1. Show grades")
     print("0. Exit")
 
@@ -35,6 +36,17 @@ def show_grades():
         )
 
 
+=======
+    print("1. Add Student")
+    print("0. Exit")
+
+def add_student(): 
+    name = input("Student name: ") 
+    marks = int(input("Marks separated by spaces: ") )
+    students[name] = [int(m) for m in marks.split()] 
+    print(f"Added {name}.")
+    
+>>>>>>> 68fb9bf72d8533e48adc85c177d28efcd939a9d7
 def main():
     while True:
         show_menu()
@@ -46,7 +58,7 @@ def main():
         elif choice == "1":
             show_grades()
         else:
-            print("Invalid option.")
+            add_student()
 
 
 students = {"Ali": [78, 91, 66]}
